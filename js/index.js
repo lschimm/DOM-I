@@ -48,6 +48,16 @@ let logo3 = document.getElementById("middle-img");
 logo3.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 
+let nav = document.querySelector('nav');
+
+const link = document.createElement('a');
+link.innerHTML = 'Extra 1'
+nav.appendChild(link);
+
+const link2 = document.createElement('a');
+link2.innerHTML = 'Extra 2'
+nav.appendChild(link2);
+
 const navLinks = document.querySelectorAll("header nav a")
 navLinks[0].textContent = (siteContent["nav"]["nav-item-1"]) 
 navLinks[1].textContent = (siteContent["nav"]["nav-item-2"])
