@@ -42,21 +42,24 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let logo2 = document.getElementById("cta-img");
-// logo2.src = "img/header-img.png"
 logo2.setAttribute('src', siteContent["cta"]["img-src"])
 
 let logo3 = document.getElementById("middle-img");
-// logo3.src = "img/mid-page-accent.jpg"
 logo3.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 
-const navLinks = document.querySelectorAll('header nav a')
-navLinks[0].textContent = (siteContent["nav"]["nav-item-1"])
+const navLinks = document.querySelectorAll("header nav a")
+navLinks[0].textContent = (siteContent["nav"]["nav-item-1"]) 
 navLinks[1].textContent = (siteContent["nav"]["nav-item-2"])
 navLinks[2].textContent = (siteContent["nav"]["nav-item-3"])
 navLinks[3].textContent = (siteContent["nav"]["nav-item-4"])
 navLinks[4].textContent = (siteContent["nav"]["nav-item-5"])
 navLinks[5].textContent = (siteContent["nav"]["nav-item-6"])
+
+
+
+const color = document.querySelector("header nav a")
+navLinks.forEach(x => x.style.color = 'green')
 
 const button = document.querySelector('button')
 button.textContent = (siteContent["cta"]["button"])
@@ -82,5 +85,5 @@ main2[5].textContent = (siteContent["contact"]["address"])
 main2[6].textContent = (siteContent["contact"]["phone"])
 main2[7].textContent = (siteContent["contact"]["email"])
 
-const foot = document.querySelector("container, footer, p")
-foot.textContent = (siteContent["footer"]["copyright"])
+// const foot = document.querySelector("container, footer, p")
+// foot.textContent = (siteContent["footer"]["copyright"])
