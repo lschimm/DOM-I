@@ -69,7 +69,10 @@ navLinks[5].textContent = (siteContent["nav"]["nav-item-6"])
 
 
 const color = document.querySelector("header nav a")
-navLinks.forEach(x => x.style.color = 'green')
+navLinks.forEach(a => a.style.color = 'green')
+/* a.forEach(a => {
+   a.style.color = "green";
+}) */ 
 
 const button = document.querySelector('button')
 button.textContent = (siteContent["cta"]["button"])
@@ -95,5 +98,5 @@ main2[5].textContent = (siteContent["contact"]["address"])
 main2[6].textContent = (siteContent["contact"]["phone"])
 main2[7].textContent = (siteContent["contact"]["email"])
 
-// const foot = document.querySelector("container, footer, p")
-// foot.textContent = (siteContent["footer"]["copyright"])
+const foot = document.querySelector("container, footer")
+foot.textContent = (siteContent["footer"]["copyright"])
